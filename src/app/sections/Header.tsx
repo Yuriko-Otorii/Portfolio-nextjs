@@ -17,8 +17,8 @@ type Props = {
 const Header = ({mode, setMode}: Props) => {
 
   return (
-    <div className="h-screen w-screen" id="top">
-      <div className="flex justify-end mr-5 md:mr-10 mt-3">
+    <div className="relative h-screen w-screen" id="top">
+      <div className="absolute top-5 right-8 flex justify-end">
         <div className="flex flex-col itens-center gap-1" onClick={() => setMode(!mode)}>
           <button>
             Mode
@@ -37,12 +37,12 @@ const Header = ({mode, setMode}: Props) => {
         </div>
       </div>
       <div className="flex flex-col items-center mt-4 md:mt-0">
-        <h1 className="text-[3rem] md:text-[6rem]">Yuriko Otorii</h1>
+        <h1 className="text-[3rem] md:text-[6rem] mt-20 md:mt-8">Yuriko Otorii</h1>
         <h2 className="text-[1.7rem] md:text-[3rem] mt-3">
           Full-stack developer
         </h2>
       </div>
-      <div className="flex justify-center gap-[10rem] mt-24">
+      <div className="flex justify-center gap-[10rem] mt-24 md:mt-16">
         <div className="flex flex-col items-center">
           <Scroll
             smooth
